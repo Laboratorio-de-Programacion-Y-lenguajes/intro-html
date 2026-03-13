@@ -36,7 +36,7 @@ a {
 
 /* ===== Navbar ===== */
 .navbar {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
 }
 
 .navbar-brand {
@@ -62,7 +62,7 @@ a {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 15%) !important;
 }
 
 .card-img-top {
@@ -87,7 +87,7 @@ a {
     background-color: #0b5ed7;
     border-color: #0b5ed7;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
+    box-shadow: 0 4px 8px rgb(13 110 253 / 30%);
 }
 
 /* ===== Formulario ===== */
@@ -100,7 +100,7 @@ a {
 
 .form-control:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    box-shadow: 0 0 0 0.2rem rgb(13 110 253 / 25%);
 }
 
 /* Validación HTML5: estilos :valid e :invalid */
@@ -144,12 +144,20 @@ footer a {
     color: #adb5bd;
 }
 
+/* ===== Accesibilidad ===== */
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
 footer a:hover {
     color: white;
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
+@media (width <= 768px) {
     h1 {
         font-size: 2rem;
     }
@@ -166,14 +174,6 @@ footer a:hover {
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
     }
-}
-
-/* ===== Accesibilidad ===== */
-a:focus,
-button:focus,
-input:focus {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
 }
 
 /* Skip to main content link */
