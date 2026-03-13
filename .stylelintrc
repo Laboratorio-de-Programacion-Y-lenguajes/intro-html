@@ -1,12 +1,3 @@
 {
-  "extends": "stylelint-config-standard",
-  "rules": {
-    "indentation": 2,
-    "string-quotes": "double",
-    "no-duplicate-selectors": true,
-    "color-no-invalid-hex": true,
-    "declaration-block-no-duplicate-properties": true,
-    "no-descending-specificity": null,
-    "selector-pseudo-element-no-unknown": null
-  }
+  "extends": "stylelint-config-standard"
 }
